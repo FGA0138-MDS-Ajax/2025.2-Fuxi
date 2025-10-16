@@ -4,7 +4,7 @@
 | :----: | :--: | :--------------------: | :-------------------: |
 | 1.0 | 25/09/2025 | Criação da ata | Pedro Vargas |
 
-## Ata renião 1 - 22/09 - 20h
+## Ata renião 1 - 25/09 - 20h
 
 ## Participantes
 - Carlos Eduardo Pereira Alexandre  
