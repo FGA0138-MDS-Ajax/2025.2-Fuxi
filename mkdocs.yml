@@ -1,4 +1,4 @@
-site_name: Documentação PesquisaUnB
+site_name: PesquisaUnB
 
 nav:
   - Instruções mkdocs: "index.md"
