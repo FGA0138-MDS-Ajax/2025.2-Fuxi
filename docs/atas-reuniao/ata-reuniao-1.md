@@ -29,7 +29,6 @@ Durante o encontro, foram reforçados pontos importantes relacionados ao grupo, 
 | Nome               | Função             | Comentários   |
 |--------------------|--------------------|---------------|
 | Bruno Souza        | Frontend           |               |
-| Carlos Eduardo     | Backend            |               |
 | Eduardo Henrique   | Testes e qualidade |               |
 | Gabriel Robson     | Banco de dados     |               |
 | Joao Victor        | Teste e qualidade  |               |
