@@ -32,7 +32,7 @@ As personas foram criadas ao redor das funcionalidades que pensamos para nosso p
 
 Personas:
 
-1.  ![Persona1]https://github.com/user-attachments/assets/86e0d485-c85b-4130-8055-604d9d20bfdd
+1.  ![Persona1](https://ibb.co/0pCJ5nCL)
 
 2.  ![Persona2]https://github.com/user-attachments/assets/0f656210-3b0d-4349-a85c-c11dc7b80df1
 
