@@ -25,18 +25,21 @@ Os objetivos desta reunião foram terminar os tópicos de funcionalidades, perso
 
 Nesta reunião, realizada de forma online por meio da plataforma Microsoft Teams, no dia 25 de setembro de 2025, às 22h, foram discutidos e finalizados os tópicos de funcionalidades, personas e jornadas do usuário no documento do Figma do Lean Inception.
 
-Funcionalidades:
+## Funcionalidades
+
 ![Funcionalidades](https://i.ibb.co/3Y0zfn0w/image.png)
 
-As personas foram criadas ao redor das funcionalidades que pensamos para nosso projeto:
+## Personas
 
-Personas:
+As personas foram criadas ao redor das funcionalidades que pensamos para nosso projeto:
 
 1.  ![Persona1](https://i.ibb.co/bjsdt6sV/image.png)
 
 2.  ![Persona2](https://i.ibb.co/tpTnFy44/image.png)
 
 3.  ![Persona3](https://i.ibb.co/JwLhwfsc/image.png)
+
+## Jornadas
 
 As jorndadas de usuário foram criadas ao redor das personas criadas:
 
