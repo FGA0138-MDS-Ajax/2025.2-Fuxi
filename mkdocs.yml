@@ -7,6 +7,8 @@ nav:
     - Ata 2: "atas-reuniao/ata-reuniao-2.md"
     - Ata 3: "atas-reuniao/ata-reuniao-3.md"
     - Ata 4: "atas-reuniao/ata-reuniao-4.md"
+  - Documentos:
+    - Documento 1: "documentos/Produto.md"
 
 theme:
   name: material
