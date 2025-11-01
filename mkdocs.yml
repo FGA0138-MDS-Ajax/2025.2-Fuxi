@@ -9,7 +9,7 @@ nav:
     - Ata 4: "atas-reuniao/ata-reuniao-4.md"
   - Documentos:
     - Visão do produto: "documentos/Produto.md"
-
+    - Arquitetura: "documentos/Arquitetura.md"
 theme:
   name: material
 
