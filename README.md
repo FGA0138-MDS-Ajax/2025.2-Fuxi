@@ -15,7 +15,7 @@ Os códigos-fonte e instruções de execução estão disponíveis nos seguintes
 ### 📱 Frontend (Mobile)
 
 - Repositório:  
-  🔗 https://github.com/fga-eps-mds/2025.2-Fuxi-Mobile
+  🔗 **https://github.com/fga-eps-mds/2025.2-Fuxi-Mobile**
 - Contém:
   - Aplicativo mobile desenvolvido em **React Native + Expo**
   - Instruções para instalação e execução
@@ -24,7 +24,7 @@ Os códigos-fonte e instruções de execução estão disponíveis nos seguintes
 ### ⚙️ Backend (API)
 
 - Repositório:  
-  🔗 https://github.com/fga-eps-mds/2025.2-Fuxi-API
+  🔗 **https://github.com/fga-eps-mds/2025.2-Fuxi-API**
 - Contém:
   - API desenvolvida em **Django + Django REST Framework**
   - Instruções completas para execução via Docker
@@ -53,34 +53,34 @@ Os códigos-fonte e instruções de execução estão disponíveis nos seguintes
     </td>
     <td align="center">
       <img src="https://github.com/lucaszg-g.png" width="100"/><br/>
-      <strong>Lucas Zg</strong><br/>
+      <strong>Lucas Gabriel</strong><br/>
       <a href="https://github.com/lucaszg-g">@lucaszg-g</a>
     </td>
     <td align="center">
       <img src="https://github.com/Eduardohcsdev.png" width="100"/><br/>
-      <strong>Eduardo HCS</strong><br/>
+      <strong>Eduardo Colacio</strong><br/>
       <a href="https://github.com/Eduardohcsdev">@Eduardohcsdev</a>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://github.com/surpesaiajin.png" width="100"/><br/>
-      <strong>Surpresa Iajin</strong><br/>
+      <strong>Leonardo de Aquino</strong><br/>
       <a href="https://github.com/surpesaiajin">@surpesaiajin</a>
     </td>
     <td align="center">
       <img src="https://github.com/DonMtys.png" width="100"/><br/>
-      <strong>Don Mtys</strong><br/>
+      <strong>João Victor</strong><br/>
       <a href="https://github.com/DonMtys">@DonMtys</a>
     </td>
     <td align="center">
       <img src="https://github.com/youngburny.png" width="100"/><br/>
-      <strong>Young Burny</strong><br/>
+      <strong>Bruno Souza</strong><br/>
       <a href="https://github.com/youngburny">@youngburny</a>
     </td>
     <td align="center">
       <img src="https://github.com/Gabrielxcx.png" width="100"/><br/>
-      <strong>Gabriel C.</strong><br/>
+      <strong>Gabriel Robson</strong><br/>
       <a href="https://github.com/Gabrielxcx">@Gabrielxcx</a>
     </td>
   </tr>
