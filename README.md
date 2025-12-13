@@ -1,23 +1,99 @@
-# template-repository - Branch DOCS
+# Projeto Vitra - Docs (Grupo Fuxi 2025.2)
 
-Template de Repositório para a matéria de Métodos de Desenvolvimento de Software lecionado pelo professor Ricardo Ajax.
+Este repositório concentra **toda a documentação do projeto Vitra**, desenvolvida ao longo da disciplina de **Métodos de Desenvolvimento de Software (MDS)**.
 
-Essa Branch de desenvolvimento "docs" deve ser mantida somente para fins de documentação, onde já se encontra uma estrutura inicial montada com MKDocs.
+## 🌐 Documentação Online
 
-## Especificações Técnicas do Repositório
+A documentação é gerada com **MkDocs** e está disponível publicamente em:
 
-Este repositório é planejado e estruturado para que seja realizado documentações de software. Caso haja outra necessidades, deve-se consultar a professora.
+🔗 **https://fga-eps-mds.github.io/2025.2-Fuxi-Docs/**
 
-Atualmente se usa a ferramenta MkDocs para gerar sua documentação baseado nos seus arquivos markdowns, vocês podem achar mais instruções sobre o MkDocs através do link da documentação da ferramenta: [https://www.mkdocs.org/](https://www.mkdocs.org/).
+## 🧩 Repositórios do Projeto
 
-Também é usado uma "sub-ferramenta" do MkDocs para sua estilização, o Material Theme, que pode ser consultado através do link: [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/).
+Os códigos-fonte e instruções de execução estão disponíveis nos seguintes repositórios:
 
-Este repositório também conta com uma pipeline de automatização de deploy do seu conteúdo MkDocs, para que a cada commit feito na main, a pipeline gere uma versão atualizada da sua documentação em minutos. Vale ressaltar que é importante realizar uma configuração para que tudo funcione da forma correta, as instruções são as seguintes:
+### 📱 Frontend (Mobile)
 
-* Acesse as configurações do repositório;
-* Procure a aba de "Pages"
-* Em "Source" escolha a opção "Deploy from a branch";
-* Em "Branch" escolha "gh-pages";
-* Clique em salvar e pronto;
+- Repositório:  
+  🔗 https://github.com/fga-eps-mds/2025.2-Fuxi-Mobile
+- Contém:
+  - Aplicativo mobile desenvolvido em **React Native + Expo**
+  - Instruções para instalação e execução
+  - Configurações de ambiente e testes
 
-Após essas etapas de configuração, o seu GitPages deve funcionar normalmente.
+### ⚙️ Backend (API)
+
+- Repositório:  
+  🔗 https://github.com/fga-eps-mds/2025.2-Fuxi-API
+- Contém:
+  - API desenvolvida em **Django + Django REST Framework**
+  - Instruções completas para execução via Docker
+  - Configurações de ambiente e testes
+
+## 👥 Equipe do Projeto
+
+### 🧑‍💼 Papéis
+
+- **Scrum Master:** [@Pedrovargas10](https://github.com/Pedrovargas10)
+- **Product Owner:** [@thgomxs](https://github.com/thgomxs)
+
+### 👨‍💻 Integrantes
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/thgomxs.png" width="100"/><br/>
+      <strong>Thiago Gomes</strong><br/>
+      <a href="https://github.com/thgomxs">@thgomxs</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Pedrovargas10.png" width="100"/><br/>
+      <strong>Pedro Vargas</strong><br/>
+      <a href="https://github.com/Pedrovargas10">@Pedrovargas10</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/lucaszg-g.png" width="100"/><br/>
+      <strong>Lucas Zg</strong><br/>
+      <a href="https://github.com/lucaszg-g">@lucaszg-g</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Eduardohcsdev.png" width="100"/><br/>
+      <strong>Eduardo HCS</strong><br/>
+      <a href="https://github.com/Eduardohcsdev">@Eduardohcsdev</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/surpesaiajin.png" width="100"/><br/>
+      <strong>Surpresa Iajin</strong><br/>
+      <a href="https://github.com/surpesaiajin">@surpesaiajin</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/DonMtys.png" width="100"/><br/>
+      <strong>Don Mtys</strong><br/>
+      <a href="https://github.com/DonMtys">@DonMtys</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/youngburny.png" width="100"/><br/>
+      <strong>Young Burny</strong><br/>
+      <a href="https://github.com/youngburny">@youngburny</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Gabrielxcx.png" width="100"/><br/>
+      <strong>Gabriel C.</strong><br/>
+      <a href="https://github.com/Gabrielxcx">@Gabrielxcx</a>
+    </td>
+  </tr>
+</table>
+
+## 📌 Observações Finais
+
+- Este repositório **não contém código-fonte**, apenas documentação.
+- Para executar o sistema, consulte os READMEs dos repositórios de **Mobile** e **API**.
+- A documentação reflete todo o processo, decisões técnicas e entregas realizadas até a **release final da disciplina**.
+
+---
+
+_Projeto desenvolvido no contexto acadêmico da Universidade de Brasília (FGA)._
+
+---
