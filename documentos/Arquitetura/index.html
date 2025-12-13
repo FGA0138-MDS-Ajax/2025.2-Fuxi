@@ -1,0 +1,1499 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Produto/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Arquitetura - Vitra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documento-de-arquitetura" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Vitra" class="md-header__button md-logo" aria-label="Vitra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vitra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Arquitetura
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Vitra" class="md-nav__button md-logo" aria-label="Vitra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Vitra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas de Reunião
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Atas de Reunião
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas-reuniao/ata-reuniao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas-reuniao/ata-reuniao-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas-reuniao/ata-reuniao-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas-reuniao/ata-reuniao-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do produto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Introdução
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-da-arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Representação da Arquitetura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Representação da Arquitetura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-padrao-arquitetural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Padrão Arquitetural
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-relacionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Diagrama de relacionamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Frontend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-microsservico-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Microsserviço API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metas-e-restricoes-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Metas e restrições arquiteturais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 Metas e restrições arquiteturais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-metas-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Metas arquiteturais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Requisitos Arquiteturais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Backlog do produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Implementação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Visão lógica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Visão lógica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1 Visão geral:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-componentes-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2 Componentes Principais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1.2 Componentes Principais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-reactnative-com-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend (ReactNative com TypeScript)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-diretorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Diretórios:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-django-rest-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend (Django Rest Framework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-diretorios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Diretórios:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama de classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-visao-de-dados-mer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Visão de dados (MER)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-visao-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Visão de implementação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Visão de implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-descricao-da-infraestrutura-de-implantacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 Descrição da Infraestrutura de Implantação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-tecnologias-de-implantacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2 Tecnologias de Implantação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Versão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Introdução
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-da-arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Representação da Arquitetura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Representação da Arquitetura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-padrao-arquitetural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Padrão Arquitetural
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-relacionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Diagrama de relacionamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Frontend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-microsservico-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Microsserviço API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metas-e-restricoes-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Metas e restrições arquiteturais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 Metas e restrições arquiteturais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-metas-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Metas arquiteturais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-arquiteturais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Requisitos Arquiteturais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Backlog do produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Implementação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Visão lógica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Visão lógica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1 Visão geral:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-componentes-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2 Componentes Principais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1.2 Componentes Principais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontend-reactnative-com-typescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend (ReactNative com TypeScript)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-diretorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Diretórios:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backend-django-rest-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend (Django Rest Framework)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-diretorios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura de Diretórios:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-de-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama de classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-visao-de-dados-mer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Visão de dados (MER)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-visao-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Visão de implementação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Visão de implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-descricao-da-infraestrutura-de-implantacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 Descrição da Infraestrutura de Implantação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-tecnologias-de-implantacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2 Tecnologias de Implantação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documento-de-arquitetura">Documento de Arquitetura</h1>
+<h2 id="historico-de-versao">Histórico de Versão</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1/11/2025</td>
+<td>1.0</td>
+<td>Criação do documento de arquitetura</td>
+<td>Pedro Vargas, Thiago Gomes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-introducao">1 Introdução</h2>
+<h3 id="11-finalidade">1.1 Finalidade</h3>
+<p>Este documento tem como finalidade descrever a arquitetura de software do projeto Vitra, uma aplicação movél. A arquitetura descrita aqui serve serve como referência para orientar a equipe ao longo do projeto, servindo também como referência para os interessados.</p>
+<h3 id="12-escopo">1.2 Escopo</h3>
+<p>O <strong>Vitra</strong> é um aplicativo mobile desenvolvido por estudantes da <strong>Universidade de Brasília (UnB)</strong>, com o objetivo de servir como uma <strong>vitrine de projetos</strong> voltada para <strong>pesquisadores, colaboradores e empresas</strong>. Este documento descreve os aspectos técnicos essenciais da arquitetura do sistema, abrangendo tanto o <strong>Frontend</strong> quanto o <strong>Microsserviço API</strong>.</p>
+<h2 id="2-representacao-da-arquitetura">2 Representação da Arquitetura</h2>
+<h3 id="21-padrao-arquitetural">2.1 Padrão Arquitetural</h3>
+<p>A arquitetura do <strong>Vitra</strong> adota uma abordagem baseada em <strong>microsserviços</strong>, composta por dois principais componentes independentes:  </p>
+<ul>
+<li><strong>Frontend:</strong> Responsável pela interface e experiência do usuário no aplicativo móvel.  </li>
+<li><strong>Microsserviço API:</strong> Responsável pela camada de backend e pela disponibilização dos serviços da aplicação.  </li>
+</ul>
+<h3 id="22-diagrama-de-relacionamento">2.2 Diagrama de relacionamento</h3>
+<p><img alt="DiagramaRelacional.jpeg" src="https://i.ibb.co/fGMWgDs4/Diagrama-Relacional.jpg" />
+<em>Diagrama elaborado por Pedro Vargas, 2025</em></p>
+<h3 id="23-frontend">2.3 Frontend</h3>
+<p>O <strong>Frontend</strong>, desenvolvido em <strong>React Native</strong>, atua como cliente da API REST. Ele representa a camada <strong>View</strong> da arquitetura global, sendo responsável por consumir os serviços oferecidos pelo backend e apresentar as informações de forma interativa ao usuário final.</p>
+<h3 id="24-microsservico-api">2.4 Microsserviço API</h3>
+<p>No <strong>Microsserviço API</strong>, foi adotado o padrão arquitetural <strong>MVC (Model-View-Controller)</strong>, implementado por meio do <strong>Django REST Framework</strong>. Nesse modelo, as responsabilidades são bem definidas e desacopladas:</p>
+<ul>
+<li><strong>Model:</strong> Representa a camada de dados e as regras de negócio, sendo responsável pela comunicação com o banco de dados <strong>PostgreSQL</strong>, que centraliza e persiste todas as informações da aplicação.  </li>
+<li><strong>View:</strong> Corresponde às <em>views</em> do Django REST Framework, que expõem os dados e funcionalidades do sistema através de endpoints da API REST.  </li>
+<li><strong>Controller:</strong> É representado pelos <em>serializers</em> e <em>viewsets</em>, que processam as requisições, aplicam regras de validação e intermediam a comunicação entre as views e os models.</li>
+</ul>
+<p>Dessa forma, a comunicação entre o microsserviço e o frontend ocorre por meio de <strong>requisições HTTP</strong>, garantindo um <strong>baixo acoplamento</strong> entre as partes e facilitando a <strong>escalabilidade</strong>, <strong>manutenção</strong> e <strong>evolução independente</strong> de cada componente.</p>
+<h2 id="3-metas-e-restricoes-arquiteturais">3 Metas e restrições arquiteturais</h2>
+<h3 id="31-metas-arquiteturais">3.1 Metas arquiteturais</h3>
+<ul>
+<li>
+<p><strong>Acessibilidade:</strong> O sistema deve ser acessível nas plataformas móveis (IOS e Android) através de um aplicativo nativo.</p>
+</li>
+<li>
+<p><strong>Manutenibilidade:</strong> A arquitetura deve ajudar em fazer com que correções de bugs e implementação de novas features. A separação entre o Frontend(View) e API (Controller/Model) é a principal forma para atingir essa meta.</p>
+</li>
+<li>
+<p><strong>Testabilidade:</strong> Facilitar a implementação de testes unitários e automatizados de forma isolada para o frontend e backend.</p>
+</li>
+<li>
+<p><strong>Segurança:</strong> Garantir requisitos de segurança para a autenticação de usuários e autoriazação baseada nos diferentes perfis.</p>
+</li>
+</ul>
+<h3 id="32-requisitos-arquiteturais">3.2 Requisitos Arquiteturais</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Restrição</strong></th>
+<th><strong>Ferramenta</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend (Linguagem)</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>Frontend (Framework)</td>
+<td>React Native e Expo</td>
+</tr>
+<tr>
+<td>Backend (Linguagem)</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>Backend (Framework)</td>
+<td>Django e Django Rest( para API)</td>
+</tr>
+<tr>
+<td>Banco de Dados</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>Plataforma</td>
+<td>Mobile</td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td>Cada usuário contará com uma conta autenticada via token (django-authtoken), visto que o aplicativo dará suporte para criação de cadastros personalizados.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-backlog-do-produto">4 Backlog do produto</h2>
+<p>Funcionamento: O aplicativo <strong>Vitra</strong> tem como objetivo fornecer maior acessibilidade e melhor visualização e navegação para pesquisas acadêmicas que estão em curso na Universidade de Brasília (UNB). Para isso, o sistema permite que os usuários se cadastrem e escolham entre três tipos de perfil (Pesquisador, Colaborador ou Empresa) ou ainda apenas o modo de visualização, definindo assim a experiência inicial dentro do aplicativo. Após realizar o login, o usuário pode visualizar informações sobre pesquisas, criar ou apoiar pesquisas e entrar em contato com pesquisadores, dependendo de sua função.</p>
+<p>Influência na Arquitetura: A arquitetura escolhida foi a Microsserviço API, principalmente por permitir uma melhor organização entre múltiplos papéis com permissões distintas. Por exemplo, apenas "Empresas" podem fazer propostas financeiras e apenas "Pesquisadores" podem criar projetos. A escolha de uma arquitetura com uma API desacoplada (Microsserviço API) foi a solução direta para esse requisito. Ela permite centralizar 100% da lógica de autorização e permissão no backend (Camada Controller), expondo ao Frontend (Camada View) apenas os dados e ações permitidos para aquele usuário específico, garantindo a segurança e a integridade das regras de negócio.</p>
+<p>Entre os fatores que influenciaram a escolha do padrão de arquitetura, destacam-se:</p>
+<ul>
+<li>
+<p>Suporte a dispositivos móveis (Android e iOS), viabilizado pelo uso do React Native;</p>
+</li>
+<li>
+<p>Necessidade de autenticação e controle centralizado de usuários;</p>
+</li>
+<li>
+<p>Facilidade na manutenção e expansão do sistema;</p>
+</li>
+<li>
+<p>Definição clara das responsabilidades entre os componentes.</p>
+</li>
+</ul>
+<h2 id="5-implementacao">5 Implementação</h2>
+<h3 id="51-visao-logica">5.1 Visão lógica</h3>
+<h4 id="511-visao-geral">5.1.1 Visão geral:</h4>
+<ul>
+<li><strong>Camada de Interface:</strong> Responsável pela interação com o usuário, desenvolvida em <strong>React Native</strong>  </li>
+<li><strong>Camada de API:</strong> Conjunto de endpoints <strong>REST</strong> disponibilizados pelo backend para comunicação com o aplicativo  </li>
+<li><strong>Camada de Serviços:</strong> Onde estão as regras de negócio e o tratamento das informações  </li>
+<li><strong>Camada de Banco de Dados:</strong> Encapsula a persistência e a manipulação dos dados no banco de dados  </li>
+</ul>
+<h3 id="512-componentes-principais">5.1.2 Componentes Principais</h3>
+<h4 id="frontend-reactnative-com-typescript">Frontend (ReactNative com TypeScript)</h4>
+<p>O frontend do <strong>Vitra</strong> foi construído utilizando <strong>React Native</strong> em conjunto com <strong>TypeScript</strong>, permitindo a criação de telas no aplicativo com tipagem estática. Essa combinação garante a identificação de erros durante a compilação, melhora a legibilidade e documentação do código, além de oferecer suporte à autocompletação no ambiente de desenvolvimento. A arquitetura é organizada de maneira modular, facilitando tanto a evolução quanto a manutenção do projeto.</p>
+<h4 id="estrutura-de-diretorios">Estrutura de Diretórios:</h4>
+<ul>
+<li><strong>Mobile:</strong> Diretório raiz do projeto Frontend em React Native (gerenciado com Expo)  </li>
+<li><strong>app:</strong> Contém as telas e rotas principais da aplicação  </li>
+<li><strong>assets/Images:</strong> Armazena as imagens e outros arquivos de mídia utilizados na interface  </li>
+<li><strong>components:</strong> Contém os componentes reutilizáveis da interface, como botões, campos de texto e menus  </li>
+<li><strong>utils:</strong> Reúne funções utilitárias, como formatações e validações usadas em várias partes do app  </li>
+<li><strong>app.json:</strong> Arquivo de configuração do Expo, definindo nome, ícone, splash screen e permissões do aplicativo  </li>
+<li><strong>eslint.config.js:</strong> Define as regras de linting e padronização do código  </li>
+<li><strong>package-lock.json:</strong> Registra as versões exatas das dependências instaladas para garantir consistência  </li>
+<li><strong>package.json:</strong> Define as dependências, scripts e metadados do projeto  </li>
+<li><strong>tsconfig.json:</strong> Configuração do TypeScript, especificando as opções de compilação e checagem de tipos  </li>
+</ul>
+<h4 id="backend-django-rest-framework">Backend (Django Rest Framework)</h4>
+<p>O backend do Vitra é desenvolvido com o Django Rest Framework e adota uma arquitetura modular, que prioriza a separação clara de responsabilidades. Sua estrutura é composta por módulos principais e segue um padrão organizado de diretórios.</p>
+<h4 id="estrutura-de-diretorios_1">Estrutura de Diretórios:</h4>
+<ul>
+<li><strong>API:</strong> Diretório raiz do projeto Django</li>
+<li><strong>api:</strong> Aplicativo Django responsável pela lógica de API  </li>
+<li><strong>core:</strong> Configurações centrais do projeto Django  </li>
+<li><strong>django.sh:</strong> Arquivos para auxílio na instalação ou inicialização do software (Script customizado).</li>
+<li><strong>docker-compose.yml:</strong> Arquivo com arquivos do Docker para orquestração de serviços.</li>
+<li><strong>Dockerfile:</strong> Arquivo de configuração Docker para construir a imagem da aplicação.</li>
+<li><strong>manage.py:</strong> Arquivo criado automaticamente para gerenciamento de comandos (execução de servidor, migrações, etc.).</li>
+<li><strong>requirements.txt:</strong> Organiza todos os pacotes/componentes que a aplicação utiliza.  </li>
+</ul>
+<h4 id="diagrama-de-classes">Diagrama de classes</h4>
+<p><img alt="Diagrama de classes" src="../../assests/images/arquitetura/DiagramadeClasses.png" />
+<em>Modelo elaborado por Pedro Vargas, 2025</em></p>
+<h3 id="52-visao-de-dados-mer">5.2 Visão de dados (MER)</h3>
+<p>O Modelo Entidade-Relacionameto (MER) foi feito para ajudar a orientar o grupo a modelar e desenolver o banco de dados. Ele define as entidades, seus atributos e os relacionamentos entre elas, garantindo a integridade e a consistência de nosso banco de dados.</p>
+<p><img alt="MER.jpeg" src="../../assests/images/arquitetura/Conceitual_1.png" />
+<em>Modelo elaborado por Pedro Vargas, 2025</em></p>
+<h3 id="53-visao-de-implementacao">5.3 Visão de implementação</h3>
+<p>O software será implantado em ambiente de desenvolvimento local (localhost), com a devida configuração da infraestrutura de software e dos parâmetros necessários para sua execução.</p>
+<h4 id="531-descricao-da-infraestrutura-de-implantacao">5.3.1 Descrição da Infraestrutura de Implantação</h4>
+<ul>
+<li>
+<p><strong>Cliente (Frontend):</strong> A aplicação será desenvolvida em React Native. Ela poderá ser executada tanto em emuladores de dispositivos móveis (como Android Studio e iOS Simulator) quanto em dispositivos físicos, por meio do aplicativo Expo Go.</p>
+</li>
+<li>
+<p><strong>Servidor (Backend):</strong> A tecnologia do servidor será desenvolvida utilizando o framework de alto nível Django.</p>
+</li>
+<li>
+<p><strong>Comunicação:</strong> Iremos utilizar a biblioteca Axios para fazer as requisições HTTP.</p>
+</li>
+<li>
+<p><strong>Armazenamento de dados:</strong> O sistema utiliza PostgreSQL para armazenamento de dados.</p>
+</li>
+<li>
+<p><strong>Repositório:</strong>: O código-fonte de todos os componentes (front-end e back-end) é gerenciado por meio de três repositórios: o de documentação (2025.2-Fuxi-Docs), o de front-end (2025.2-Fuxi-Mobile) e o de back-end (2025.2-Fuxi-API).</p>
+</li>
+</ul>
+<h4 id="532-tecnologias-de-implantacao">5.3.2 Tecnologias de Implantação</h4>
+<ul>
+<li>
+<p><strong>Imprelentação Local</strong>: Por se tratar de um projeto de pequeno porte, não houve necessidade de utilizar uma hospedagem mais complexa, o que também evitou custos adicionais com esse tipo de serviço.</p>
+</li>
+<li>
+<p><strong>Docker</strong>: Garante que todos usem o mesmo banco de dados PostgreSQL e os mesmos serviços de back-end.</p>
+</li>
+<li>
+<p><strong>PostgreSQL:</strong> Foi escolhido por ser mais fácil de implementar com o Django.</p>
+</li>
+<li>
+<p><strong>React Native:</strong> Foi escolhido por ser uma opção que facilita a codificação para dispositivos móveis.</p>
+</li>
+<li>
+<p><strong>Django REST Framework:</strong> Framework backend robusto e seguro. Sua arquitetura acelera a construção de APIs RESTful complexas, como necessitamos dados os mútltiplos perfis existentes.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
